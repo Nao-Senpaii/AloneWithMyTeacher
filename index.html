@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alone With My Teacher — Novela Visual Cozy</title>
+  <meta name="description" content="Alone With My Teacher — novela visual para adultos. Historia, galería y descarga." />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <link rel="shortcut icon" href="https://img.itch.zone/aW1nLzIyMzIzNTI0LmpwZw==/32x32%23/3%2F9E71.jpg" type="image/x-icon">
+</head>
+<body>
+
+  <!-- skip link para accesibilidad -->
+  <a class="skip-link visually-hidden-focusable" href="#main">Saltar al contenido</a>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">Alone With My Teacher</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Mostrar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Summary</a></li>
+            <li class="nav-item"><a class="nav-link" href="./gallery/index.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="./downloads/index.html">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <!-- Banner (usar picture para responsive / future-proof) -->
+    <section class="game-banner" aria-hidden="false">
+      <picture>
+        <!-- Puedes añadir versiones más pequeñas en srcset -->
+        <source srcset="./src/imgs/AWMT_BG-small.jpg" media="(max-width:767px)">
+        <img src="./src/imgs/AWMT_BG.jpg" alt="Banner: Alone With My Teacher" class="img-fluid w-100" loading="lazy">
+      </picture>
+    </section>
+
+    <!-- Resumen -->
+    <section id="resumen" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Game Summary</h2>
+        <div class="row align-items-center g-5">
+          <div class="col-md-7">
+            <p class="lead" style="line-height:1.7;">
+              Fran is a very shy student who has a very good relationship with his teacher Ruby. 
+              She saves him from bullies and helps him to have more self-confidence. 
+              One day they both get into a spicy situation due to some aphrodisiac chocolates that teacher Ruby ate.
+            </p>
+
+            <div class="mt-4 p-3 alert alert-danger d-inline-block shadow-cozy" role="alert" aria-live="polite">
+              <h5 class="mb-1"><i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>Warning!</h5>
+              <p class="mb-0">This game contains adult content (+18) and mature themes. Play at your own discretion.</p>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <figure>
+              <img src="./src/imgs/AWMT_BS2.png" alt="Escena ilustrativa del juego" class="img-fluid rounded-3 shadow-cozy" loading="lazy">
+              <figcaption class="visually-hidden">CG del juego — escena promocional</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Image Gallery</h2>
+
+        <div id="galleryCarousel" class="carousel slide shadow-cozy rounded-3 overflow-hidden" data-bs-ride="carousel" aria-label="Galería de imágenes">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./src/imgs/AWMT_Carousel.png" class="d-block w-100" alt="CG del juego 1" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="./src/imgs/AWMT_Carousel2.png" class="d-block w-100" alt="CG del juego 2" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="./src/imgs/AWMT_Carousel3.png" class="d-block w-100" alt="CG del juego 3" loading="lazy">
+            </div>
+            <div class="carousel-item">
+              <img src="./src/imgs/AWMT_Carousel4.png" class="d-block w-100" alt="CG del juego 4" loading="lazy">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev" aria-label="Anterior imagen">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next" aria-label="Siguiente imagen">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Descargar / Call to Action -->
+    <section id="descargar" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Ready to Play?</h2>
+        <p class="lead mb-4">Download the latest version of the game or support its development.</p>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+          <a href="./downloads/index.html" class="btn btn-primary btn-lg mx-2 mb-2 shadow-sm" role="button" aria-label="Descargar para PC">
+            <i class="fas fa-download me-2" aria-hidden="true"></i>Download
+          </a>
+
+          <a href="https://www.patreon.com/cw/Ghelber" target="_blank" class="btn btn-patreon btn-lg mx-2 mb-2 shadow-sm" role="button" aria-label="Apoya en Patreon">
+            <i class="fab fa-patreon me-2" aria-hidden="true"></i>Support on Patreon
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer-simple">
+  <div class="container text-center py-3">
+    <p class="mb-0">
+      Copyright © 2025 <strong>ghelber</strong>. Todos los derechos reservados. |
+      <a href="https://ko-fi.com/chronoworksinteractive" target="_blank" class="footer-link">Donaciones</a> ·
+      <a href="https://discord.gg/s3sECQBJ9t" target="_blank" class="footer-link">Comunidad</a>
+    </p>
+  </div>
+</footer>
+
+
+
+  <!-- Modal verificación de edad -->
+  <div class="modal fade" id="ageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content shadow-cozy">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ageModalLabel"><i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>Verificación de Edad</h5>
+        </div>
+        <div class="modal-body">
+          <p>Este sitio web contiene material para adultos (+18) y no es apto para menores.</p>
+          <p>Por favor, confirma que tienes <strong>18 años o más</strong> para continuar.</p>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary btn-lg" id="btn-modal-exit">Salir</button>
+          <button type="button" class="btn btn-primary btn-lg" id="btn-modal-enter">Entrar (Soy +18)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: bootstrap + custom -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    (function () {
+      // Elementos
+      const ageModalEl = document.getElementById('ageModal');
+      const btnExit = document.getElementById('btn-modal-exit');
+      const btnEnter = document.getElementById('btn-modal-enter');
+
+      // --- Validación añadida ---
+      // Nos aseguramos de que los elementos y Bootstrap existan antes de continuar
+      if (!ageModalEl || !btnExit || !btnEnter) {
+        console.error("Faltan elementos del modal (ageModal, btn-exit, o btn-enter).");
+        return;
+      }
+      if (typeof bootstrap === 'undefined' || typeof bootstrap.Modal === 'undefined') {
+        console.error("Bootstrap 5 o bootstrap.Modal no está definido. Asegúrate de que el JS de Bootstrap se cargue primero.");
+        return;
+      }
+      // --- Fin de la validación ---
+
+      // Inicializa modal de bootstrap
+      const bsModal = new bootstrap.Modal(ageModalEl);
+
+      // Funciones de persistencia
+      const KEY = 'awmt_age_confirmed_v1';
+      function isConfirmed() {
+        try { return localStorage.getItem(KEY) === 'true'; } catch (e) { return false; }
+      }
+      function setConfirmed() {
+        try { localStorage.setItem(KEY, 'true'); } catch (e) {}
+      }
+
+      // Si ya confirmaron, no mostrar modal
+      if (!isConfirmed()) {
+        bsModal.show();
+
+        // Control de foco: focusear el botón entrar para elegir acción por teclado
+        ageModalEl.addEventListener('shown.bs.modal', () => {
+          btnEnter.focus();
+        });
+      }
+
+      // Si confirman
+      btnEnter.addEventListener('click', () => {
+        setConfirmed();
+        bsModal.hide();
+        // Llevar foco al main para accesibilidad
+        const mainEl = document.getElementById('main');
+        if (mainEl) {
+            mainEl.focus();
+        }
+      });
+
+      // Si salen, redirigir a sitio neutral
+      btnExit.addEventListener('click', () => {
+        // Nota: cambiar destino si prefieres otra URL
+        window.location.href = 'https://www.google.com';
+      });
+
+      // Previene que el usuario cierre el modal con Escape (data-bs-keyboard="false" ya lo evita),
+      // pero para robustez añadimos la comprobación:
+      ageModalEl.addEventListener('hide.bs.modal', (evt) => {
+        if (!isConfirmed()) {
+          // Evitar cierre si no confirmó (solo por seguridad UX)
+          evt.preventDefault();
+        }
+      });
+
+      // Mejor UX: si el usuario borra localStorage, el modal volverá a mostrarse la próxima vez.
+    })();
+  });
+  </script>
+
+</body>
+</html>
