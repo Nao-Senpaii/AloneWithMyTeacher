@@ -435,3 +435,109 @@ img { max-width: 100%; height: auto; display: block; }
     position: static;
   }
 }
+
+/* === (NUEVO) Estilos para la página de Roadmap/Goals === */
+
+/* Barras de progreso personalizadas */
+.progress {
+  height: 1.5rem;
+  background-color: var(--border-soft);
+  border-radius: 1rem;
+  box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.progress-bar-custom {
+  background-color: var(--accent);
+  font-weight: 600;
+  line-height: 1.5rem;
+  transition: width 1s ease-in-out;
+}
+
+/* Línea de tiempo (Timeline) vertical */
+.timeline-container {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 3px solid var(--border-soft);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+/* El punto (dot) de la línea de tiempo */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.65rem; /* Ajuste para centrar el punto en la línea */
+  top: 0.25rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--bg-light);
+  border: 3px solid var(--accent);
+  border-radius: 50%;
+  z-index: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-item:hover::before {
+  background-color: var(--accent);
+  transform: scale(1.2);
+}
+
+.timeline-date {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Tarjetas de Metas (Goals) */
+.goal-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.goal-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.goal-icon {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.btn-pagination-red {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.page-link{
+  color: var(--accent);
+  border-color: var(--accent);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.page-item.active .page-link {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.page-link:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: #fff;
+}
