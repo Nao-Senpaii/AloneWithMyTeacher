@@ -48,19 +48,15 @@
       </div>
     </nav>
   </header>
-
+  
   <main id="main" tabindex="-1">
     <!-- Banner (usar picture para responsive / future-proof) -->
-    <section class="game-banner" aria-hidden="false">
-      <picture>
-        <!-- Puedes añadir versiones más pequeñas en srcset -->
-        <source srcset="./src/imgs/AWMT_BG.jpg" media="(max-width:767px)">
-        <img src="./src/imgs/AWMT_BG.jpg" alt="Banner: Alone With My Teacher" class="img-fluid w-100" loading="lazy">
-      </picture>
+    <section class="hero">
+      <img src="./src/imgs/AWMT_BG.jpg" alt="Banner Alone With My Teacher" class="reveal">
     </section>
 
     <!-- Resumen -->
-    <section id="resumen" class="py-5">
+    <section id="resumen" class="py-5 reveal">
       <div class="container">
         <h2 class="text-center">Game Summary</h2>
         <div class="row align-items-center g-5">
@@ -88,7 +84,7 @@
     </section>
 
     <!-- Galería -->
-    <section id="galeria" class="py-5">
+    <section id="galeria" class="py-5 reveal">
       <div class="container">
         <h2 class="text-center">Image Gallery</h2>
 
@@ -129,7 +125,7 @@
     </section>
 
     <!-- Descargar / Call to Action -->
-    <section id="descargar" class="py-5">
+    <section id="descargar" class="py-5 reveal">
       <div class="container text-center">
         <h2 class="mb-4">Ready to Play?</h2>
         <p class="lead mb-4">Download the latest version of the game or support its development.</p>
@@ -164,15 +160,15 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content shadow-cozy">
         <div class="modal-header">
-          <h5 class="modal-title" id="ageModalLabel"><i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>Verificación de Edad</h5>
+          <h5 class="modal-title" id="ageModalLabel"><i class="fas fa-exclamation-triangle me-2" aria-hidden="true"></i>Age Verification</h5>
         </div>
         <div class="modal-body">
-          <p>Este sitio web contiene material para adultos (+18) y no es apto para menores.</p>
-          <p>Por favor, confirma que tienes <strong>18 años o más</strong> para continuar.</p>
+          <p>This website contains adult content (+18) and is not suitable for minors.</p>
+          <p>Please confirm that you are <strong>18 years or older</strong> to continue.</p>
         </div>
         <div class="modal-footer justify-content-center">
-          <button type="button" class="btn btn-secondary btn-lg" id="btn-modal-exit">Salir</button>
-          <button type="button" class="btn btn-primary btn-lg" id="btn-modal-enter">Entrar (Tengo +18)</button>
+          <button type="button" class="btn btn-secondary btn-lg" id="btn-modal-exit">Exit</button>
+          <button type="button" class="btn btn-primary btn-lg" id="btn-modal-enter">Enter (I'm +18)</button>
         </div>
       </div>
     </div>
@@ -253,6 +249,7 @@
     })();
   });
   </script>
+  <script src="./src/js/script.js"></script>
 
 </body>
 </html>

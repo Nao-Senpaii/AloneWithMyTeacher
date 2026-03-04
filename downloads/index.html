@@ -49,16 +49,41 @@
 
     <main id="main" tabindex="-1">
       <section id="download-page" class="py-5">
-        <div class="container">
-          <h2 class="text-center">Downloads!</h2>
+        <section class="download-hero text-center text-lg-start reveal">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <h1 class="hero-title">Download it</h1>
+                <p class="hero-subtitle">
+                  Choose your platform, download and start playing <strong>Alone With My Teacher</strong>.
+                </p>
 
+                <div class="hero-badges mt-3">
+                  <span class="badge-soft">Windows</span>
+                  <span class="badge-soft">Mac</span>
+                  <span class="badge-soft">Linux</span>
+                  <span class="badge-soft">Android</span>
+                </div>
+              </div>
+
+              <div class="col-lg-6 text-center">
+                <img src="./../src/imgs/Lisa-Fran.png"
+                    class="hero-image img-fluid"
+                    alt="Game characters">
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <div class="container mt-5">
           <div class="row g-5">
-            <div class="col-lg-7">
-              <h3 class="mb-3" style="font-family: 'Comfortaa', cursive; color: var(--accent);">Current Version</h3>
+            <div class="col-lg-7 reveal">
+              <h3 class="mb-3 reveal" style="font-family: 'Comfortaa', cursive; color: var(--accent);">Current Version</h3>
 
-              <div class="download-box shadow-cozy mb-3">
+              <div class="download-box shadow-cozy mb-3 reveal">
                 <div class="mb-3">
-                  <span class="badge text-bg-primary me-2" style="background-color: var(--accent) !important;">v0.12.1</span>
+                  <span class="badge text-bg-primary me-2" style="background-color: var(--accent) !important;">v0.12.2</span>
                 </div>
 
                 <div class="list-group itch-download-list shadow-cozy" style="border-radius: 12px; overflow: hidden;">
@@ -95,9 +120,9 @@
                 </div>
               </div>
 
-              <h3 class="mb-3 mt-5" style="font-family: 'Comfortaa', cursive; color: var(--accent);">Earlier Versions</h3>
+              <h3 class="mb-3 mt-5 reveal" style="font-family: 'Comfortaa', cursive; color: var(--accent);">Earlier Versions</h3>
 
-              <div class="download-box shadow-cozy mb-3">
+              <div class="download-box shadow-cozy mb-3 reveal">
 
                 <div id="versionsContainer" class="list-group itch-download-list shadow-cozy" style="border-radius: 12px; overflow: hidden;">
                   <!-- Las versiones se generarán dinámicamente aquí -->
@@ -112,7 +137,7 @@
               </div>
             </div>
 
-            <div class="col-lg-5">
+            <div class="col-lg-5 reveal">
               <img src="./../src/imgs/AWMT_Characters.jpg" alt="Illustrative game scene"
                    class="img-fluid rounded-3 shadow-cozy mt-5 mb-4" loading="lazy">
 
@@ -357,5 +382,6 @@
         });
       })();
     </script>
+    <script src="./../src/js/script.js"></script>
   </body>
 </html>
